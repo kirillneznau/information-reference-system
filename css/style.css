@@ -1,0 +1,98 @@
+html,body{
+	height: 100%;
+}
+
+.header{
+    min-height: 90px;
+}
+
+.main{
+	flex: 1 1 auto;
+}
+
+.wrapper{
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.emblema{
+    height: 70px;
+    transition: 0.1s;
+}
+
+.emblema-cont{
+    width: 100px;
+    height: 90px;
+}
+
+.emblema:hover{
+    height: 65px;
+    transition: 0.1s;
+}
+
+.room-img{
+    width: 100%;
+}
+
+.szi-img{
+    width: 60%;
+}
+
+.big-room-img{
+    width: 80%;
+}
+
+.a {
+	position: relative;
+	color: #fff; /*задаём цвет ссылки*/
+	cursor: pointer;
+	line-height: 2; /*задаём высоту строки*/
+}
+.a:after {
+	display: block;
+	position: absolute;
+	left: 0; 
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 2px; /*задаём ширину линии*/
+	background-color: #fff; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s; /*задаём время анимации*/
+}
+.a:hover:after,
+.a:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+a{
+text-decoration: none;
+}
+
+.pagination > li > a
+{
+    background-color: rgb(255, 255, 255);
+    color: #1b1b1b;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    color: #1b1b1b;
+    background-color: #eee;
+    border-color: #ddd;
+}
+
+.pagination > .active > a
+{
+    color: #1b1b1b !Important;
+    background-color: #d3cf00 !Important;
+    border: solid 1px #d3cf00 !Important;
+}
+
+.pagination > .active > a:hover
+{
+    background-color: #e0dd26 !Important;
+    border: solid 1px #e0dd26;
+}
